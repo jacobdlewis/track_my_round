@@ -1,5 +1,9 @@
 *.gem
 *.rbc
+.rspec
+/log/*.log
+/config/database.yml
+/db
 /.config
 /coverage/
 /InstalledFiles
