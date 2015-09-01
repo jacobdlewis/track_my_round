@@ -1,0 +1,9 @@
+<h1>Create a Course</h1>
+
+<%= simple_form_for @course do |f| %>
+  <%= f.input :name %>
+  <%= f.input :city %>
+  <%= f.input :state %>
+  <%= f.input :number_of_holes %>
+  <%= f.button :submit %>
+<% end %>
