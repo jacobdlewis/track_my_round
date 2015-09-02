@@ -4,6 +4,13 @@ class CoursesController < ApplicationController
     @course = Course.new
   end
 
+  def show
+    @course = Course.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.json { render json: @course }
+  end
+
   def index
     @courses = Course.all
   end
