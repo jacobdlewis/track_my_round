@@ -1,6 +1,8 @@
 class RoundsController < ApplicationController
 
   def new
+    @round = Round.new
+    @courses = Course.all
   end
 
   def index

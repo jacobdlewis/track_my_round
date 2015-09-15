@@ -1,0 +1,4 @@
+<%= simple_form_for @round do |f| %>
+  <%= f.input :course_id, collection: @courses.map{ |c| ["#{c.name}"] } %>
+  <%= f.button :submit, "Submit Round" %>
+<% end %>
