@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'holes_controller/index'
+
+  get 'holes_controller/show'
+
+  get 'holes_controller/update'
+
+  get 'holes_controller/delete'
+
+  get 'holes_controller/create'
+
   devise_for :users, controllers: { sessions: "users/sessions" }
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
